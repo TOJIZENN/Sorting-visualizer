@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--
+    *****************
+    CREATED BY:-   ADITYA SINGH
+    *****************
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs button-container">
+                <p>Size of the array 📏:</p>
+                <input id="a_size" type="range" min="20" max="150" step="1" value="80">
+                <p>Speed of the algo 🚀:</p>
+                <input id="a_speed" type="range" min="1" max="5" step="1" value="4">
+                <button id="a_generate" style="margin-top: 20px;">Generate 🆕 Array!</button>
+            </div>
+
+            <div class="header_right">
+                <div class="nav-header">
+                    <p class="nav-heading" style="margin-left:50px;">Sorting Visualizer</p>
+                    <button id="reset-Button" class="reset-button">Reset 🗘</button>
+
+                </div>
+                <div class="algos">
+                    <button>Bubble 🫧</button>
+                    <button>Selection ✅</button>
+                    <button>Insertion 🖋</button>
+                    <button>Merge 🔗</button>
+                    <button>Quick 🫰</button>
+                    <button>Heap ⛰</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div id="Info_Cont1">
+            <h3 style="margin-top: -40px;">TIME COMPLEXITY</h3>
+            <div class="Complexity_Containers" id="Time_Complexity_Types_Container">
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Worst case:</p>
+                    <p id="Time_Worst"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Average case:</p>
+                    <p id="Time_Average"></p>
+                </div>
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading">Best case:</p>
+                    <p id="Time_Best"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="array_container"></div>
+
+        <div id="Info_Cont2">
+            <h3 style="margin-left: 25px; margin-top: -40px;">SPACE COMPLEXITY</h3>
+            <div class="Complexity_Containers" id="Space_Complexity_Types_Container">
+                <div class="Pair_Definitions">
+                    <p class="Sub_Heading" style="margin-left: 25px;">Worst case:</p>
+                    <p id="Space_Worst"></p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="time_taken_container" style="display: flex; justify-content: center;">
+        <h3 class="emoji-large">⏱: <span id="time_taken">__</span> sec</h3>
+    </div>
+    
+    <footer></footer>
+
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/visualizations.js"></script>
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+</html>
