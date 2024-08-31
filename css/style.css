@@ -195,3 +195,65 @@ section #array_container {
 nav input[type="range"] {
   accent-color: rgb(11, 113, 23); /* Change the slider color to green */
 }
+
+/* Add these media queries at the end of your CSS file */
+
+@media screen and (max-width: 1200px) {
+  nav {
+    grid-template-columns: 1fr;
+  }
+
+  nav .array-inputs {
+    grid-template-columns: 1fr;
+  }
+
+  nav .header_right .algos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  section #Info_Cont1,
+  section #Info_Cont2 {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .header_right .nav-heading {
+    font-size: x-large;
+  }
+
+  nav .header_right .algos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .emoji-large, #time_taken {
+    font-size: 30px;
+  }
+
+  #time_taken_container {
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav .header_right .algos {
+    grid-template-columns: 1fr;
+  }
+
+  nav .array-inputs #a_generate {
+    margin-left: 0;
+  }
+
+  .emoji-large, #time_taken {
+    font-size: 24px;
+  }
+
+  #time_taken_container {
+    top: -30px;
+  }
+}
+
